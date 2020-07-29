@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import {StyleSheet, Text, View,TouchableOpacity,TextInput,Image,Button} from 'react-native';
+import {StyleSheet, Text, View,TouchableOpacity,TextInput,Image,Button,ScrollView} from 'react-native';
 import {Container,Input,Icon,Thumbnail} from 'native-base';
 import Modal from 'react-native-modal';
 import ImagePicker from 'react-native-image-picker';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const Home = ({navigation}) => {
     const [isModalVisible, setModalVisible] = useState(false);
@@ -26,21 +30,22 @@ const handleChoosePhoto = () => {
   };
   return (
     <Container style={styles.background}> 
+    <ScrollView>
     <View style={{flexDirection:'row'}}>
         <View style={styles.searchview}>
-            <TextInput style={styles.searchbar} placeholder="                                                             "/>
+            <TextInput style={styles.searchbar} placeholder="Enter Your Text Here"/>
             <Thumbnail style={styles.searchicon} source={require('../assets/search.png')}/>
         </View>
-        <View style={{marginLeft: 20}}>
-            <Text style={{fontSize:30,color:'white',textAlign:'center'}}>
+        <View style={{width: wp('30%'),height: hp('9%')}}>
+            <Text style={{fontSize:26,color:'white',textAlign:'center'}}>
                 Systems {"\n"} Logged {"\n"} ###
             </Text>
         </View>
     </View>
  
  
-        <TouchableOpacity style={{height:'6%',marginLeft:20,backgroundColor:'white',width:'65%'}} onPress={toggleModal}>
-            <Text style={{fontSize:30,color:'black',textAlign:'center'}}>Add System</Text>
+        <TouchableOpacity style={{height: hp('8%'),marginLeft:20,backgroundColor:'white',width: wp('70%'),marginTop:20,}} onPress={toggleModal}>
+            <Text style={{fontSize:55,color:'black',textAlign:'center',width: wp('70%'),height: hp('8%')}}>Add System</Text>
         </TouchableOpacity>
         <Modal isVisible={isModalVisible}>
           <View style={{flex: 1}}>
@@ -61,30 +66,56 @@ const handleChoosePhoto = () => {
         </Modal>
   
     
-        <TouchableOpacity style={{flexDirection:'row'}} onPress={()=> navigation.navigate('SystemName')}>
-            <Text style={{color:'white',fontSize:55,marginTop:20,backgroundColor:'#3c3c3c'}}>System Name</Text>
-            <Image style={{marginTop:20,height:80,width:110}} source={require('../assets/gray.jpg')}/>
-            </TouchableOpacity> 
-            <TouchableOpacity style={{flexDirection:'row'}} onPress={()=> navigation.navigate('SystemName')}>
-            <Text style={{color:'white',fontSize:55,marginTop:20,backgroundColor:'#3c3c3c'}}>System Name</Text>
-            <Image style={{marginTop:20,height:80,width:110}} source={require('../assets/gray.jpg')}/>
+            <TouchableOpacity style={{flexDirection:'row',marginTop:20}} onPress={()=> navigation.navigate('SystemName')}>
+            <View style={{height:hp('9%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:50,textAlign:'center'}}>System Name</Text>
+            </View>
+            <View style={{height:hp('9%'),width: wp('27%')}}>
+            <Image style={{height:hp('9%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
             </TouchableOpacity>
-            <TouchableOpacity style={{flexDirection:'row'}} onPress={()=> navigation.navigate('SystemName')}>
-            <Text style={{color:'white',fontSize:55,marginTop:20,backgroundColor:'#3c3c3c'}}>System Name</Text>
-            <Image style={{marginTop:20,height:80,width:110}} source={require('../assets/gray.jpg')}/>
+            <TouchableOpacity style={{flexDirection:'row',marginTop:10}} onPress={()=> navigation.navigate('SystemName')}>
+            <View style={{height:hp('9%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:50,textAlign:'center'}}>System Name</Text>
+            </View>
+            <View style={{height:hp('9%'),width: wp('27%')}}>
+            <Image style={{height:hp('9%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
             </TouchableOpacity>
-            <TouchableOpacity style={{flexDirection:'row'}} onPress={()=> navigation.navigate('SystemName')}>
-            <Text style={{color:'white',fontSize:55,marginTop:20,backgroundColor:'#3c3c3c'}}>System Name</Text>
-            <Image style={{marginTop:20,height:80,width:110}} source={require('../assets/gray.jpg')}/>
+            <TouchableOpacity style={{flexDirection:'row',marginTop:10}} onPress={()=> navigation.navigate('SystemName')}>
+            <View style={{height:hp('9%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:50,textAlign:'center'}}>System Name</Text>
+            </View>
+            <View style={{height:hp('9%'),width: wp('27%')}}>
+            <Image style={{height:hp('9%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
             </TouchableOpacity>
-            <TouchableOpacity style={{flexDirection:'row'}} onPress={()=> navigation.navigate('SystemName')}>
-            <Text style={{color:'white',fontSize:55,marginTop:20,backgroundColor:'#3c3c3c'}}>System Name</Text>
-            <Image style={{marginTop:20,height:80,width:110}} source={require('../assets/gray.jpg')}/>
+            <TouchableOpacity style={{flexDirection:'row',marginTop:10}} onPress={()=> navigation.navigate('SystemName')}>
+            <View style={{height:hp('9%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:50,textAlign:'center'}}>System Name</Text>
+            </View>
+            <View style={{height:hp('9%'),width: wp('27%')}}>
+            <Image style={{height:hp('9%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
             </TouchableOpacity>
-            <TouchableOpacity style={{flexDirection:'row'}} onPress={()=> navigation.navigate('SystemName')}>
-            <Text style={{color:'white',fontSize:55,marginTop:20,backgroundColor:'#3c3c3c'}}>System Name</Text>
-            <Image style={{marginTop:20,height:80,width:110}} source={require('../assets/gray.jpg')}/>
+            <TouchableOpacity style={{flexDirection:'row',marginTop:10}} onPress={()=> navigation.navigate('SystemName')}>
+            <View style={{height:hp('9%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:50,textAlign:'center'}}>System Name</Text>
+            </View>
+            <View style={{height:hp('9%'),width: wp('27%')}}>
+            <Image style={{height:hp('9%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
             </TouchableOpacity>
+            <TouchableOpacity style={{flexDirection:'row',marginTop:10}} onPress={()=> navigation.navigate('SystemName')}>
+            <View style={{height:hp('9%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:50,textAlign:'center'}}>System Name</Text>
+            </View>
+            <View style={{height:hp('9%'),width: wp('27%')}}>
+            <Image style={{height:hp('9%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
+            </TouchableOpacity>
+             
+            </ScrollView>
         
     </Container>
   );
@@ -100,8 +131,8 @@ const styles = StyleSheet.create({
         backgroundColor:'white',
         flexDirection:'row',
         justifyContent:'flex-start',
-        height: '70%',
-        width:'65%',
+        height: hp('9%'),
+        width: wp('70%'),
         marginTop: 10,
         marginLeft: 20
       },
@@ -112,13 +143,16 @@ const styles = StyleSheet.create({
         borderColor:'black',
         borderWidth: 1,
         borderRadius: 30,
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        width: wp('50%'),
+        height: hp('5%')
       },
       searchicon:{
+          marginLeft:5,
           marginBottom:10,
           marginTop: 10,
-          width:40,
-          height: 40
+          width:wp('10%'),
+          height: hp('5%')
       }
         
 });

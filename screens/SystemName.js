@@ -1,35 +1,65 @@
 import React, {useState, useEffect} from 'react';
-import {StyleSheet, Text, View,TouchableOpacity,Image} from 'react-native';
+import {StyleSheet, Text, View,TouchableOpacity,Image,ScrollView} from 'react-native';
 import {Container} from 'native-base';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const SystemName = ({navigation}) => {
   return (
     <Container style={styles.background}> 
-    <View style={{flexDirection:'row'}}>
-            <Text style={{color:'white',fontSize:55,marginTop:10,backgroundColor:'#3c3c3c'}}>System Name</Text>
-            <Image style={{marginTop:10,height:80,width:110}} source={require('../assets/gray.jpg')}/>
+          <ScrollView>
+            <View style={{flexDirection:'row',marginTop:10}}>
+            <View style={{height:hp('9%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:50,textAlign:'center'}}>System Name</Text>
             </View>
-            <Image style={{marginTop:10,height:'25%',width:'100%'}} source={require('../assets/gray.jpg')} />
-            <TouchableOpacity style={{flexDirection:'row'}} onPress={()=> navigation.navigate('PlanetName')}>
-            <Text style={{color:'white',fontSize:60,marginTop:20,backgroundColor:'#3c3c3c'}}>Planet Name</Text>
-            <Image style={{marginTop:20,height:80,width:110}} source={require('../assets/gray.jpg')}/>
+            <View style={{height:hp('9%'),width: wp('27%')}}>
+            <Image style={{height:hp('9%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
+            </View>
+            <Image style={{marginTop:3,height:hp('25%'),width: wp('100%')}} source={require('../assets/gray.jpg')} />
+            <TouchableOpacity style={{flexDirection:'row',marginTop:5}} onPress={()=> navigation.navigate('PlanetName')}>
+            <View style={{height:hp('10%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:55,textAlign:'center'}}>Planet Name</Text>
+            </View>
+            <View style={{height:hp('10%'),width: wp('27%')}}>
+            <Image style={{height:hp('10%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
             </TouchableOpacity>
-            <TouchableOpacity style={{flexDirection:'row'}} onPress={()=> navigation.navigate('PlanetName')}>
-            <Text style={{color:'white',fontSize:60,marginTop:20,backgroundColor:'#3c3c3c'}}>Planet Name</Text>
-            <Image style={{marginTop:20,height:80,width:110}} source={require('../assets/gray.jpg')}/>
+            <TouchableOpacity style={{flexDirection:'row',marginTop:5}} onPress={()=> navigation.navigate('PlanetName')}>
+            <View style={{height:hp('10%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:55,textAlign:'center'}}>Planet Name</Text>
+            </View>
+            <View style={{height:hp('10%'),width: wp('27%')}}>
+            <Image style={{height:hp('10%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
             </TouchableOpacity>
-            <TouchableOpacity style={{flexDirection:'row'}} onPress={()=> navigation.navigate('PlanetName')}>
-            <Text style={{color:'white',fontSize:60,marginTop:20,backgroundColor:'#3c3c3c'}}>Planet Name</Text>
-            <Image style={{marginTop:20,height:80,width:110}} source={require('../assets/gray.jpg')}/>
+            <TouchableOpacity style={{flexDirection:'row',marginTop:5}} onPress={()=> navigation.navigate('PlanetName')}>
+            <View style={{height:hp('10%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:55,textAlign:'center'}}>Planet Name</Text>
+            </View>
+            <View style={{height:hp('10%'),width: wp('27%')}}>
+            <Image style={{height:hp('10%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
             </TouchableOpacity>
-            <TouchableOpacity style={{flexDirection:'row'}} onPress={()=> navigation.navigate('SystemName')}>
-            <Text style={{color:'white',fontSize:60,marginTop:20,backgroundColor:'#3c3c3c'}}>Planet Name</Text>
-            <Image style={{marginTop:20,height:80,width:110}} source={require('../assets/gray.jpg')}/>
+            <TouchableOpacity style={{flexDirection:'row',marginTop:5}} onPress={()=> navigation.navigate('PlanetName')}>
+            <View style={{height:hp('10%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:55,textAlign:'center'}}>Planet Name</Text>
+            </View>
+            <View style={{height:hp('10%'),width: wp('27%')}}>
+            <Image style={{height:hp('10%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
             </TouchableOpacity>
-            <TouchableOpacity style={{flexDirection:'row'}} onPress={()=> navigation.navigate('PlanetName')}>
-            <Text style={{color:'white',fontSize:60,marginTop:20,backgroundColor:'#3c3c3c'}}>Planet Name</Text>
-            <Image style={{marginTop:20,height:80,width:110}} source={require('../assets/gray.jpg')}/>
+            <TouchableOpacity style={{flexDirection:'row',marginTop:5}} onPress={()=> navigation.navigate('PlanetName')}>
+            <View style={{height:hp('10%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
+            <Text style={{color:'white',fontSize:55,textAlign:'center'}}>Planet Name</Text>
+            </View>
+            <View style={{height:hp('10%'),width: wp('27%')}}>
+            <Image style={{height:hp('10%'),width: wp('27%')}} source={require('../assets/gray.jpg')}/>
+            </View>
             </TouchableOpacity>
+            </ScrollView>
     </Container>
   );
 };
