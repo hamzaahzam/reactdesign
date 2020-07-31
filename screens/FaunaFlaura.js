@@ -24,7 +24,7 @@ const PlanetName = ({navigation}) => {
               backgroundColor: '#3c3c3c',
               height: hp('10%'),
               padding: '1%',
-              fontSize: 30,
+              fontSize: hp('4%'),
             }}>
             Fauna Name
           </Text>
@@ -42,7 +42,7 @@ const PlanetName = ({navigation}) => {
             color: '#b7b7b7',
             backgroundColor: '#3c3c3c',
             padding: '2%',
-            fontSize: 20,
+            fontSize: hp('2.4%'),
           }}>
           In a nutshell, the term flora relates to all plant life and the term
           fauna represents all animal life.The term flora in Latin means
@@ -59,17 +59,32 @@ const PlanetName = ({navigation}) => {
             </TouchableOpacity> */}
         <TouchableOpacity
           style={{alignSelf: 'center', marginTop: '5%', marginBottom: '2%'}}
-          onPress={() => navigation.navigate('Flora')}>
+          onPress={() => navigation.navigate('ShipFrighter')}>
           <Text
             style={{
               color: '#b7b7b7',
-              fontSize: 40,
+              fontSize: hp('5%'),
               textAlign: 'center',
               backgroundColor: '#3c3c3c',
               width: wp('80%'),
               borderRadius: 30,
             }}>
-            Flora
+            Ship
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{alignSelf: 'center', marginTop: '5%', marginBottom: '2%'}}
+          onPress={() => navigation.navigate('Frighter')}>
+          <Text
+            style={{
+              color: '#b7b7b7',
+              fontSize: hp('5%'),
+              textAlign: 'center',
+              backgroundColor: '#3c3c3c',
+              width: wp('80%'),
+              borderRadius: 30,
+            }}>
+            Freighter
           </Text>
         </TouchableOpacity>
       </ScrollView>

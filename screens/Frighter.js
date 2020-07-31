@@ -19,7 +19,7 @@ const PlanetName = ({navigation}) => {
               padding: '1%',
               fontSize: hp('4%'),
             }}>
-            Ship Name
+            Freighter Name
           </Text>
         </View>
 

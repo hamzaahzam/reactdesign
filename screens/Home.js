@@ -68,7 +68,7 @@ const Home = ({navigation}) => {
           onPress={toggleModal}>
           <Text
             style={{
-              fontSize: 30,
+              fontSize: hp('4%'),
               color: 'black',
               textAlign: 'center',
               paddingTop: '4%',
@@ -118,7 +118,7 @@ const Home = ({navigation}) => {
                 width: '70%',
                 textAlign: 'center',
                 paddingTop: '4%',
-                fontSize: 30,
+                fontSize: hp('4%'),
               }}>
               System Name
             </Text>
@@ -145,7 +145,7 @@ const Home = ({navigation}) => {
                 width: '70%',
                 textAlign: 'center',
                 paddingTop: '4%',
-                fontSize: 30,
+                fontSize: hp('4%'),
               }}>
               System Name
             </Text>
@@ -172,7 +172,7 @@ const Home = ({navigation}) => {
                 width: '70%',
                 textAlign: 'center',
                 paddingTop: '4%',
-                fontSize: 30,
+                fontSize: hp('4%'),
               }}>
               System Name
             </Text>
@@ -199,7 +199,7 @@ const Home = ({navigation}) => {
                 width: '70%',
                 textAlign: 'center',
                 paddingTop: '4%',
-                fontSize: 30,
+                fontSize: hp('4%'),
               }}>
               System Name
             </Text>
@@ -226,7 +226,7 @@ const Home = ({navigation}) => {
                 width: '70%',
                 textAlign: 'center',
                 paddingTop: '4%',
-                fontSize: 30,
+                fontSize: hp('4%'),
               }}>
               System Name
             </Text>
@@ -253,7 +253,7 @@ const Home = ({navigation}) => {
                 width: '70%',
                 textAlign: 'center',
                 paddingTop: '4%',
-                fontSize: 30,
+                fontSize: hp('4%'),
               }}>
               System Name
             </Text>
@@ -280,7 +280,7 @@ const Home = ({navigation}) => {
                 width: '70%',
                 textAlign: 'center',
                 paddingTop: '4%',
-                fontSize: 30,
+                fontSize: hp('4%'),
               }}>
               System Name
             </Text>
@@ -307,7 +307,7 @@ const Home = ({navigation}) => {
                 width: '70%',
                 textAlign: 'center',
                 paddingTop: '4%',
-                fontSize: 30,
+                fontSize: hp('4%'),
               }}>
               System Name
             </Text>

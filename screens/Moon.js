@@ -33,7 +33,7 @@ const PlanetName = ({navigation}) => {
               fontSize: hp('4%'),
               
             }}>
-            Planet Name
+            Moon Name
           </Text>
           {/* <Image style={{height:hp('10%')}} source={require('../assets/gray.png')}/> */}
           <View style={{padding: '2%'}}>

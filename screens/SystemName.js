@@ -31,7 +31,7 @@ const SystemName = ({navigation}) => {
               width: '70%',
               textAlign: 'center',
               paddingTop: '4%',
-              fontSize: 30,
+              fontSize: hp('4%'),
             }}>
             System Name
           </Text>
@@ -75,9 +75,36 @@ const SystemName = ({navigation}) => {
                 width: '70%',
                 textAlign: 'center',
                 paddingTop: '4%',
-                fontSize: 30,
+                fontSize: hp('4%'),
               }}>
               Planet Name
+            </Text>
+            <Image
+              style={{height: '100%', width: '30%'}}
+              source={require('../assets/gray.png')}
+            />
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{marginBottom: '2%'}}
+          onPress={() => navigation.navigate('Moon')}>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+            }}>
+            <Text
+              style={{
+                color: 'white',
+                backgroundColor: '#3c3c3c',
+                height: hp('9%'),
+                width: '70%',
+                textAlign: 'center',
+                paddingTop: '4%',
+                fontSize: hp('4%'),
+              }}>
+              Moon Name
             </Text>
             <Image
               style={{height: '100%', width: '30%'}}
@@ -102,7 +129,7 @@ const SystemName = ({navigation}) => {
                 width: '70%',
                 textAlign: 'center',
                 paddingTop: '4%',
-                fontSize: 30,
+                fontSize: hp('4%'),
               }}>
               Planet Name
             </Text>
@@ -112,6 +139,34 @@ const SystemName = ({navigation}) => {
             />
           </View>
         </TouchableOpacity>
+        <TouchableOpacity
+          style={{marginBottom: '2%'}}
+          onPress={() => navigation.navigate('Moon')}>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+            }}>
+            <Text
+              style={{
+                color: 'white',
+                backgroundColor: '#3c3c3c',
+                height: hp('9%'),
+                width: '70%',
+                textAlign: 'center',
+                paddingTop: '4%',
+                fontSize: hp('4%'),
+              }}>
+              Moon Name
+            </Text>
+            <Image
+              style={{height: '100%', width: '30%'}}
+              source={require('../assets/gray.png')}
+            />
+          </View>
+        </TouchableOpacity>
+        
 
         {/* <TouchableOpacity style={{flexDirection:'row',marginTop:5}} onPress={()=> navigation.navigate('PlanetName')}>
             <View style={{height:hp('10%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
