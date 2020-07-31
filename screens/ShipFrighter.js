@@ -17,7 +17,7 @@ const PlanetName = ({navigation}) => {
               backgroundColor: '#3c3c3c',
               height: hp('10%'),
               padding: '1%',
-              fontSize: 30,
+              fontSize: hp('4%'),
             }}>
             Ship/Freighter Name
           </Text>

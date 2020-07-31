@@ -6,7 +6,6 @@ import {
   TouchableOpacity,
   TextInput,
   Image,
-  Button,
   ScrollView,
 } from 'react-native';
 import {Container, Input, Icon, Thumbnail} from 'native-base';
@@ -35,6 +34,7 @@ const Home = ({navigation}) => {
       }
     });
   };
+  
   return (
     <Container style={styles.background}>
       <ScrollView>
@@ -50,10 +50,10 @@ const Home = ({navigation}) => {
             />
           </View>
           <View style={{marginLeft: '2%', marginRight: '2%'}}>
-            <Text style={{fontSize: 26, color: 'white'}}>Systems</Text>
-            <Text style={{fontSize: 26, color: 'white'}}>Logged</Text>
-            <Text style={{fontSize: 26, color: 'white', textAlign: 'center'}}>
-              10
+            <Text style={{fontSize: hp('3%'), color: 'white',textAlign:'center'}}>Systems</Text>
+            <Text style={{fontSize: hp('3%'), color: 'white',textAlign:'center'}}>Logged</Text>
+            <Text style={{fontSize: hp('3%'), color: 'white', textAlign: 'center'}}>
+              08
             </Text>
           </View>
         </View>

@@ -30,7 +30,7 @@ const PlanetName = ({navigation}) => {
               width: '75%',
               height: hp('10%'),
               padding: '1%',
-              fontSize: 30,
+              fontSize: hp('4%'),
             }}>
             Planet/Moon Name
           </Text>
@@ -89,7 +89,7 @@ const PlanetName = ({navigation}) => {
               width: wp('80%'),
               borderRadius: 30,
             }}>
-            Fauna/Flora
+            Fauna
           </Text>
         </TouchableOpacity>
       </ScrollView>
