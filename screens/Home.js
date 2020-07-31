@@ -7,6 +7,7 @@ import {
   TextInput,
   Image,
   ScrollView,
+  Button
 } from 'react-native';
 import {Container, Input, Icon, Thumbnail} from 'native-base';
 import Modal from 'react-native-modal';
@@ -42,7 +43,7 @@ const Home = ({navigation}) => {
           <View style={styles.searchview}>
             <TextInput
               style={styles.searchbar}
-              placeholder="Enter Your Text Here"
+              placeholder="Your Text Here"
             />
             <Thumbnail
               style={styles.searchicon}
@@ -77,9 +78,9 @@ const Home = ({navigation}) => {
           </Text>
         </TouchableOpacity>
 
-        {/* <Modal isVisible={isModalVisible}>
+        <Modal style={{ width: '90%', height: '60%', backgroundColor: 'gray', alignItems: 'center', marginTop: '40%', borderRadius: 40, position: 'absolute' }} isVisible={isModalVisible}>
           <View style={{flex: 1}}>
-            <TextInput style={{fontSize:30,borderWidth:1,textAlign:'center',borderColor:'white',borderRadius:25,marginTop:10,marginBottom:10}}
+            <TextInput style={{width: 250, fontSize:14,borderWidth:1,textAlign:'center',borderColor:'white',borderRadius:10,marginTop:'10%'}}
             placeholder="Enter System Name" placeholderTextColor='white'/>
             <View style={{alignItems: 'center'}}>
               {photo && (
@@ -89,9 +90,14 @@ const Home = ({navigation}) => {
                   source={require('../assets/AddImage.png')}/>
               <Text style={{fontSize:33,color:'white',marginBottom:30}} onPress={handleChoosePhoto}>Add Image</Text>
             </View>
-            <Button title="Upload" onPress={toggleModal} />
+            <View style={{ marginBottom: 10 }}>
+              <Button title="Upload" color="#3c3c3c" />
+            </View>
+            <View>
+              <Button title="Close" onPress={toggleModal} />
+            </View>
           </View>
-        </Modal> */}
+        </Modal>
 
         {/* <TouchableOpacity style={{flexDirection:'row',marginTop:20}} onPress={()=> navigation.navigate('SystemName')}>
             <View style={{height:hp('9%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
@@ -332,7 +338,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     flexDirection: 'row',
     alignItems: 'center',
-    height: hp('8%'),
+    height: hp('10%'),
     paddingLeft: '2%',
     paddingRight: '2%',
   },
@@ -340,7 +346,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 30,
     width: wp('50%'),
-    height: hp('5%'),
+    height: hp('7%'),
   },
   searchicon: {
     marginLeft: 5,

@@ -10,11 +10,13 @@ import ShipFrighter from './screens/ShipFrighter';
 import Flora from './screens/Flora';
 import Moon from './screens/Moon';
 import Frighter from './screens/Frighter';
+import {Text} from 'react-native';
 
 const Stack = createStackNavigator();
   
 export default function App() {
-
+  Text.defaultProps = Text.defaultProps || {};
+  Text.defaultProps.allowFontScaling = false;
   return (
     <NavigationContainer>
       <Stack.Navigator>
