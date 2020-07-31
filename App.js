@@ -8,6 +8,7 @@ import SystemName from './screens/SystemName';
 import PlanetName from './screens/PlanetName';
 import FaunaFlaura from './screens/FaunaFlaura';
 import ShipFrighter from './screens/ShipFrighter';
+import Flora from './screens/Flora';
 
 const Stack = createStackNavigator();
   
@@ -22,6 +23,7 @@ export default function App() {
       <Stack.Screen options={{headerShown: false}} name="SystemName" component={SystemName} />
       <Stack.Screen options={{headerShown: false}} name="PlanetName" component={PlanetName} />
       <Stack.Screen options={{headerShown: false}} name="FaunaFlaura" component={FaunaFlaura} />
+      <Stack.Screen options={{headerShown: false}} name="Flora" component={Flora} />
       <Stack.Screen options={{headerShown: false}} name="ShipFrighter" component={ShipFrighter} />
 
 

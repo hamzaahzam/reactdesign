@@ -36,9 +36,9 @@ const PlanetName = ({navigation}) => {
           </Text>
           {/* <Image style={{height:hp('10%')}} source={require('../assets/gray.png')}/> */}
           <View style={{padding: '2%'}}>
-            <Text style={{color: '#b7b7b7', fontSize: 18}}>Biones</Text>
+            <Text style={{color: '#b7b7b7', fontSize: 18}}>Biomes</Text>
             <Text style={{color: '#b7b7b7', fontSize: 18}}>Weather</Text>
-            <Text style={{color: '#b7b7b7', fontSize: 18}}>Sentineals</Text>
+            <Text style={{color: '#b7b7b7', fontSize: 18}}>Sentinels</Text>
           </View>
         </View>
 

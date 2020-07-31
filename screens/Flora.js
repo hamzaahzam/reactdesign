@@ -26,7 +26,7 @@ const PlanetName = ({navigation}) => {
               padding: '1%',
               fontSize: 30,
             }}>
-            Fauna Name
+            Flora Name
           </Text>
         </View>
 
@@ -59,7 +59,7 @@ const PlanetName = ({navigation}) => {
             </TouchableOpacity> */}
         <TouchableOpacity
           style={{alignSelf: 'center', marginTop: '5%', marginBottom: '2%'}}
-          onPress={() => navigation.navigate('Flora')}>
+          onPress={() => navigation.navigate('ShipFrighter')}>
           <Text
             style={{
               color: '#b7b7b7',
@@ -69,7 +69,7 @@ const PlanetName = ({navigation}) => {
               width: wp('80%'),
               borderRadius: 30,
             }}>
-            Flora
+            Ship/Freighter
           </Text>
         </TouchableOpacity>
       </ScrollView>
