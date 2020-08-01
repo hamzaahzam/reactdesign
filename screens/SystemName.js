@@ -21,7 +21,7 @@ const SystemName = ({navigation}) => {
           style={{
             flex: 1,
             flexDirection: 'row',
-            justifyContent: 'space-between',
+            // justifyContent: 's',
           }}>
           <Text
             style={{
@@ -35,10 +35,22 @@ const SystemName = ({navigation}) => {
             }}>
             System Name
           </Text>
-          <Image
-            style={{height: '100%', width: '30%'}}
-            source={require('../assets/gray.png')}
-          />
+            <View style={{ paddingLeft: '4%', paddingTop: '1%'}}>
+            <Image
+              style={{ width: 30, height: 30 }}
+              source={require('../assets/economy1.png')}
+            />
+            <Image
+              style={{ width: 30, height: 30 }}
+              source={require('../assets/conflict1.png')}
+            />
+            </View>
+            <View style={{ paddingLeft: '4%', paddingTop: '1%'}}>
+            <Image
+              style={{ width: 30, height: 30 }}
+              source={require('../assets/race1.png')}
+            />
+            </View>
         </View>
         {/* <View style={{flexDirection:'row',marginTop:10}}>
           <View style={{height:hp('9%'),width: wp('73%'),backgroundColor:'#3c3c3c'}}>
