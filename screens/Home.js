@@ -16,14 +16,51 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import database from '@react-native-firebase/database';
+
+
 
 const Home = ({navigation}) => {
+
+
+  // const newReference = database()
+  // .ref('/users')
+  // .push();
+  // console.log('Auto generated key: ', newReference.key);
+  // newReference
+  // .set({
+  //   age: 32,
+  // })
+  // .then(() => console.log('Data updated.'));
+
+
+
+
   const [isModalVisible, setModalVisible] = useState(false);
   const toggleModal = () => {
     setModalVisible(!isModalVisible);
   };
 
   const [photo, setPhoto] = useState(null);
+  const [mylist, setMylist] = useState([]);
+
+  // useEffect(() => {
+  //   const mydata = database().ref("systemdata");
+  //   mydata.on('value', datasnpshot=>{
+  //     if(datasnpshot.val()){
+  //       setMylist(Object.values(datasnpshot.val()))
+  //     }
+  //   })
+  // });
+
+  const saveitem = () => {
+    console.log('Chala')
+    const mydata = database().ref('systemdata');
+    mydata.push().set({
+      text: 'Huzam',
+      time: Date.now()
+    })
+  }
 
   const handleChoosePhoto = () => {
     const options = {
@@ -35,6 +72,8 @@ const Home = ({navigation}) => {
       }
     });
   };
+
+  console.log(mylist)
   
   return (
     <Container style={styles.background}>
@@ -75,6 +114,24 @@ const Home = ({navigation}) => {
               paddingTop: '4%',
             }}>
             Add System
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: 'white',
+            width: wp('65%'),
+            height: hp('8%'),
+            marginBottom: '5%',
+          }}
+          onPress={saveitem}>
+          <Text
+            style={{
+              fontSize: hp('4%'),
+              color: 'black',
+              textAlign: 'center',
+              paddingTop: '4%',
+            }}>
+            System
           </Text>
         </TouchableOpacity>
 
